@@ -81,9 +81,9 @@ fun PreviewMessageCard(){
 @Composable
 fun MessageCardX(activity: ComponentActivity,message: Message,change:(message: Message)->Unit){
 //
-//    var isExpand by remember {
-//        mutableStateOf(message.isExpand)
-//    }
+    var isExpand by remember {
+        mutableStateOf(message.isExpand)
+    }
 
     var mxessage by remember {
         mutableStateOf(message)
